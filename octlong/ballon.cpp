@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <queue>
+#include <cstdio>
 #define DEBUG(X) cout << X << endl;
 #define LL long long int
 using namespace std;
@@ -26,11 +27,14 @@ int main(int argc, char const *argv[])
 	cin >> n >> m;
 	for(int i = 0; i < n; ++i)
 	{
-		cin >> a[i];
+		scanf("%lld",&a[i]);
+
+		// cin >> a[i];
 	}
 	for(int i = 0; i < n; ++i)
 	{
-		cin >> b[i];
+		// cin >> b[i];
+		scanf("%lld",&b[i]);
 	}
 
 	priority_queue<int, vector<int>, mycmp> q;
